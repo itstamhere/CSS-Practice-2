@@ -1,0 +1,160 @@
+/* Things I give up on:
+- Spacing the links at the bottom
+- Spacing the section in the middle so that they're not equally far apart and more like the actual page
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General stuff */
+body {
+    font-family: arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+/* Navigation bar */
+nav {
+    padding: 10px 0px 10px 20px;
+    text-align: right;
+}
+
+/* Links on the navigation bar */
+nav a, .fa.fa-th {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.fa.fa-th {
+    color: #666;
+}
+
+/* Sign in button */
+nav .sign-in {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Everything in the middle */
+section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* The Google logo */
+img  {
+    width: 350;
+}
+
+/* Search bar and the icons on its ends */
+.search{
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+.fa {
+    color: #666;
+}
+
+form {
+    display: inline;
+}
+
+input {
+    border: none;
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* The buttons */
+.buttons a {
+    background-color: #f5f5f5;
+    color: #666;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Bit at the end */
+footer {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+footer div {
+    padding: 10px 10px 10px 20px;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer div:last-child {
+    border: none;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
